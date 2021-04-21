@@ -31,7 +31,7 @@ public class GeneralModule extends Module<LoginSecurity> {
     public void enable() {
         registerCommands();
         registerListeners();
-        setupUpdater();
+        //setupUpdater();
         setupMetrics();
 
         // This line is so alone :(  I feel bad for him
