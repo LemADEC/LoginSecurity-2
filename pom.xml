@@ -6,7 +6,7 @@
 
     <groupId>com.lenis0012.bukkit</groupId>
     <artifactId>loginsecurity</artifactId>
-    <version>3.0.3-SNAPSHOT</version>
+    <version>3.1.1-SNAPSHOT</version>
     <name>LoginSecurity</name>
     <url>https://www.spigotmc.org/resources/loginsecurity.19362/</url>
 
@@ -63,22 +63,22 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
 
-        <!-- Vault repo -->
+        <!-- Jitpack repo -->
         <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>
-
-        <!-- Author's repo -->
-        <repository>
-            <id>lenis0012-repo</id>
-            <url>https://dl.bintray.com/lenis0012/maven-releases/</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
 
         <!-- CodeMC repo -->
         <repository>
             <id>codemc-releases</id>
             <url>https://repo.codemc.org/repository/maven-releases/</url>
+        </repository>
+
+        <!-- ProtocolLib repo -->
+        <repository>
+            <id>dmulloy2-repo</id>
+            <url>https://repo.dmulloy2.net/repository/public/</url>
         </repository>
     </repositories>
 
@@ -98,11 +98,11 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>net.milkbowl.vault</groupId>
+            <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
             <scope>provided</scope>
@@ -110,12 +110,18 @@
         <dependency>
             <groupId>com.lenis0012.bukkit</groupId>
             <artifactId>lenisutils</artifactId>
-            <version>1.0</version>
+            <version>1.0.1</version>
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>ProtocolLib</artifactId>
+            <version>4.7.0</version>
+            <scope>provided</scope>
+        </dependency>
 
-        <!-- SQL dependencies. Synced with Paper 1.16.5 -->
+        <!-- SQL dependencies. Synced with Paper 1.17.1-->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>

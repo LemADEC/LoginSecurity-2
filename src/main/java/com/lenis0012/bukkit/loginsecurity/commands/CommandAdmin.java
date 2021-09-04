@@ -84,6 +84,12 @@ public class CommandAdmin extends Command {
         }
     }
 
+    @SubCommand(description = "lacReload")
+    public void reload() {
+        LoginSecurity.getConfiguration().reload();
+        reply(true, translate(LAC_RELOAD_SUCCESS));
+    }
+
     @SubCommand(description = "lacRmpass", usage = "lacRmpassArgs", minArgs = 1)
     public void rmpass() {
         String name = getArg(1);
