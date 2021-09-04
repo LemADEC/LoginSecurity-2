@@ -137,7 +137,7 @@ public class CommandAdmin extends Command {
         Bukkit.getScheduler().runTaskAsynchronously(plugin, storageImport);
     }
 
-    @SubCommand(description = "NoTrans:Download update from bukkit/spigot")
+    /*@SubCommand(description = "NoTrans:Download update from bukkit/spigot")
     public void update() {
         final Updater updater = plugin.getModule(GeneralModule.class).getUpdater();
         final Version version = updater.getNewVersion();
@@ -174,5 +174,5 @@ public class CommandAdmin extends Command {
                 player.updateInventory();
             });
         });
-    }
+    }*/
 }

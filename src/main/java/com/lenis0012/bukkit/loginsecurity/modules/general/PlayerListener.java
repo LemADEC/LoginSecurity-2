@@ -118,9 +118,9 @@ public class PlayerListener implements Listener {
         }
 
         // Admin update check
-        if(session.isAuthorized() && player.hasPermission("ls.update")) {
+        /*if(session.isAuthorized() && player.hasPermission("ls.update")) {
             general.checkUpdates(player);
-        }
+        }*/
 
         if(session.isAuthorized() || !session.isRegistered()) {
             return;
@@ -159,7 +159,7 @@ public class PlayerListener implements Listener {
             return;
         }
 
-        general.checkUpdates(player);
+        //general.checkUpdates(player);
     }
 
     @EventHandler
